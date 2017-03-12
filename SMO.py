@@ -63,5 +63,5 @@ def decision_function(alphas, target, kernel, X_train, x_test, b):
 if __name__ == '__main__':
     # smo = SMOModel()
     x_len, y_len = 5, 10
-    # smo.linear_kernel(np.random.rand(x_len, 1), np.random.rand(y_len, 1)).shape == (x_len, y_len)
-    # smo.gaussian_kernel(np.random.rand(x_len, 1), np.random.rand(y_len, 1)).shape == (5, 10)
+    smo.linear_kernel(np.random.rand(x_len, 1), np.random.rand(y_len, 1)).shape == (x_len, y_len)
+    smo.gaussian_kernel(np.random.rand(x_len, 1), np.random.rand(y_len, 1)).shape == (5, 10)
